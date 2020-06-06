@@ -53,7 +53,7 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 			response.setContentType(MediaType.ALL_VALUE);
 			try {
 				m.put("code", "error");
-				m.put("message", "usuccessful, invalid username or password \n");
+				m.put("message", "unsuccessful, invalid username or password \n");
 				String json = gson.toJson(m);
 				PrintWriter pr = response.getWriter();
 				response.setContentType("application/json");
